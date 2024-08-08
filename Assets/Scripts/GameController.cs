@@ -20,6 +20,9 @@ public class GameController : MonoBehaviour
 
     public GameObject GameOverUI;
 
+    [SerializeField]private GameObject PainelOpcoes;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +54,20 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(lvlName);
     }
 
+    public void AbrirOpções()
+    {
+        PainelOpcoes.SetActive(true);
+    }
+
+    public void FecharOpcoes()
+    {
+        PainelOpcoes.SetActive(false);
+    }
+
+    public void SairDoJogo()
+    {
+        Application.Quit(); 
+    }
 }
 
 

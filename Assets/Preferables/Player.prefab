@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2985083414499539764}
   - component: {fileID: 2212223631759156749}
   - component: {fileID: 6249764914219077611}
-  - component: {fileID: 6428120090854938493}
+  - component: {fileID: 4703982886590963896}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 813149542594343980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.57, y: 0.19, z: 0}
-  m_LocalScale: {x: 2.691224, y: 2.691224, z: 2.691224}
+  m_LocalPosition: {x: -7.547, y: 0.19, z: 0}
+  m_LocalScale: {x: 2.6426675, y: 2.7449806, z: 2.691224}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -152,7 +152,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!70 &6428120090854938493
+--- !u!70 &4703982886590963896
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,6 +184,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0042254427, y: -0.03918236}
-  m_Size: {x: 0.22550163, y: 0.25239182}
+  m_Offset: {x: 0.002604981, y: -0.04041863}
+  m_Size: {x: 0.22756313, y: 0.2629395}
   m_Direction: 0

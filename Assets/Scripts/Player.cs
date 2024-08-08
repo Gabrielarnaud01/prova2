@@ -23,8 +23,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        OnAnimatorMove();
         Jump();
+        OnAnimatorMove();
+        
     }
 
     private void OnAnimatorMove()
@@ -59,16 +60,17 @@ public class Player : MonoBehaviour
             {
                 rig.velocity=new Vector2(rig.velocity.x, Jumpforce);
                 doubleJump = true;
+                isJumping = true;
                 anim.SetBool("jump", true);
             }
-            else
+            else if (isJumping && doubleJump)
             {
                 if (doubleJump)
                 {
                     rig.velocity = new Vector2(rig.velocity.x, Jumpforce);
                     doubleJump = false;
                 }
-            }
+            } 
             
         }
     }
@@ -89,14 +91,7 @@ public class Player : MonoBehaviour
 
 
     }
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == 6)
-        {
-            isJumping = true;
-            doubleJump = true;
-        }
-    }
+    
 
     private void WinGame()
     {

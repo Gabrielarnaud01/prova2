@@ -7866,6 +7866,63 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!1001 &188496882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.143222
+      objectReference: {fileID: 0}
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.20147134
+      objectReference: {fileID: 0}
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.053538874
+      objectReference: {fileID: 0}
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 211260306175256101, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689399299661317240, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
+      propertyPath: m_Name
+      value: AudioController
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c1451ce523ee27469c8feddbad4e923, type: 3}
 --- !u!1 &216033292
 GameObject:
   m_ObjectHideFlags: 0
@@ -8136,6 +8193,7 @@ MonoBehaviour:
   timeText: {fileID: 1368580238}
   timeCount: 0
   GameOverUI: {fileID: 484648132}
+  PainelOpcoes: {fileID: 0}
 --- !u!4 &292399275
 Transform:
   m_ObjectHideFlags: 0
@@ -9447,7 +9505,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 861083943}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 292399274}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: SairDoJogo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &861083943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15484,7 +15554,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'GAME OVER
+  m_Text: 'FECHAR
+
 
 '
 --- !u!222 &1695689673
@@ -16078,6 +16149,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 216033295}
   - {fileID: 2795331}
+  - {fileID: 188496882}
   - {fileID: 418256932}
   - {fileID: 292399275}
   - {fileID: 932276778}
